@@ -77,8 +77,8 @@ const URLForm = () => {
         {results.map((r, idx) => (
           <div key={idx}>
             {r.error
-              ? `❌ ${r.original} - ${r.error}`
-              : `✅ ${r.original} → ${r.shortUrl} (Expires: ${r.expiresAt})`}
+              ? ` ${r.original} - ${r.error}`
+              : ` ${r.original} : ${r.shortUrl} (Expires: ${r.expiresAt})`}
           </div>
         ))}
       </div>
