@@ -26,11 +26,11 @@ const StatisticsPage = () => {
       {stats.map((s, idx) => (
         <div key={idx} style={{ marginTop: 10 }}>
           <div>
-            🔗 <strong>{s.shortUrl}</strong> → {s.originalUrl}
+             <strong>{s.shortUrl}</strong> → {s.originalUrl}
           </div>
-          <div>🕓 Created at: {s.createdAt}</div>
-          <div>⏳ Expires at: {s.expiresAt}</div>
-          <div>👁️‍🗨️ Clicks: {s.clickCount}</div>
+          <div> Created at: {s.createdAt}</div>
+          <div> Expires at: {s.expiresAt}</div>
+          <div> Clicks: {s.clickCount}</div>
           <ul>
             {s.clicks.map((click, i) => (
               <li key={i}>
